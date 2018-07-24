@@ -1,0 +1,62 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+	<!-- //navigation -->
+	<!-- banner -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="slider">
+	<figure>
+		 	<div class="slide">
+		 		<img src="/static/image/macbook.jpg">
+		 	</div>
+
+		 	<div class="slide">
+		 		<img src="/static/image/camera.jpg">
+		 	</div>
+		 	<div class="slide">
+		 		<img src="/static/image/desk.jpg">
+		 	</div>
+		 	<div class="slide">
+		 		<img src="/static/image/keyboard.jpeg">
+		 	</div>
+	 </figure>
+ </div>
+		<div class="footer-copy">
+			<div class="footer-copy1">
+				<div class="footer-copy-pos">
+					<a href="#home1" class="scroll"><img src="/static/image/arrow.png" alt=" " class="img-responsive" /></a>
+				</div>
+			</div>
+			<div class="container">
+				<p>&copy; 2018 Avail. All rights reserved | Design by Computer Students</p>
+			</div>
+		</div>
+
+	<!-- //footer -->
+	<!-- cart-js -->
+	<script src="/static/js/minicart.js"></script>
+	<script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        		}
+        	}
+        });
+    </script>
+
+	<!-- //cart-js -->
+
+{% endblock %}
+

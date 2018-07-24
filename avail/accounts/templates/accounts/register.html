@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style1.css">
+</head>
+<body>
+<a href="signin.html"></a>
+<a href="about.html"></a>
+<a href="register.html"></a>
+
+  <div class="main">
+     <ul>
+        <li><a href="{% url 'home' %}"><i class="fas fa-home fa-fw"></i>Home</a></li>
+        <li><a href="{% url 'about' %}"><i class="fas fa-font fa-fw"></i> About Us</a></li>
+        <li><a href="#"><i class="fas fa-balance-scale fa-fw"></i> Compare</a>
+
+        </li>
+        <li><a href="{% url 'categories' %}"><i class="fas fa-clipboard fa-fw"></i> Categories</a>
+
+        </li>
+        <li><a href="{% url 'signin' %}"><i class="fas fa-user fa-fw"></i> Sign in</a>
+        </li>
+        <li><a href="{% url 'register' %}"><i class="fas fa-book fa-fw"></i> Register</a>
+        </li>
+        <form class="search-form">
+
+           <input type="text" placeholder="Search ">
+           <button> Search </button>
+
+        </form>
+
+
+     </ul>
+
+  </div>
+</body>
+
+<head>
+    <meta charset="utf-8">
+	<title>register from</title>
+	<link rel="stylesheet" type="text/css" href="/static/signin.css">
+
+</head>
+<body>
+<a href="{% url 'signin' %}"></a>
+    <div class="title"><h1>Register Form</h1></div>
+    <div class="container">
+    	<div class="left"></div>
+    	<div class="right">
+    		<div class="formbox">
+    			<form>
+    				<p>Username</p>
+    				<input type="text" name="" placeholder="Online">
+    				<p>Password</p>
+    				<input type="Password" name="" placeholder="......">
+                    <p>Email id</p>
+                    <input type="text" name="" placeholder="Online">
+    				<input type="submit" name="" value="Create">
+    			</form>
+    		</div>
+    	</div>
+    </div>

@@ -1,0 +1,138 @@
+.slidecontainer {
+	padding: 15px;
+    width: 100%; 
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 230px;
+    height: 24px;
+    border: 0;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.submit-form{
+	
+	float: center;
+	padding: 10px;
+}
+ button{
+    
+    background: orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-family: sans-serif;
+    border:none;
+    font-size: 16px;
+ }
+h5{
+    color: #333;
+    font-size: 30px;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+
+.osh-tabs-defult ul, li{
+  float: right;
+}
+.brands {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+element.style {
+}
+
+.brands.-gallery>.brand:nth-child(5n+1) {
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+}
+.brands.-gallery>.brand {
+    width: 20%;
+    float: left;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}

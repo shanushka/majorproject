@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      <link rel="stylesheet" type="text/css" href="/static/style1.css">
+      <link rel="stylesheet" type="text/css" href="/static/categories.css">
+
+      <script>
+function sliderChange(val) {
+  // Use Ajax post to send the adjusted value to PHP or MySQL storage
+  document.getElementById('sliderStatus').innerHTML = val;
+}
+
+function checkOnly(stayChecked)
+  {
+  with(document.myForm)
+    {
+    for(i = 0; i < elements.length; i++)
+      {
+      if(elements[i].checked == true && elements[i].name != stayChecked.name)
+        {
+        elements[i].checked = false;
+        }
+      }
+    }
+  }
+</script>
+
+  </head>
+  <body>
+    <a href="{% url 'signin' %}"></a>
+    <a href="{% url 'about' %}"></a>
+    <a href="{% url 'register' %}"></a>
+
+    <div class="main">
+       <ul>
+          <li><a href="{% url 'home' %}"><i class="fas fa-home fa-fw"></i>Home</a></li>
+          <li><a href="{% url 'about' %}"><i class="fas fa-font fa-fw"></i> About Us</a></li>
+          <li><a href="{% url 'compare' %}"><i class="fas fa-balance-scale fa-fw"></i> Compare</a>
+
+          </li>
+          <li><a href="{% url 'categories' %}"><i class="fas fa-clipboard fa-fw"></i> Categories</a>
+
+          </li>
+          <li><a href="signin.html"><i class="fas fa-user fa-fw"></i> Sign in</a>
+          </li>
+          <li><a href="register.html"><i class="fas fa-book fa-fw"></i> Register</a>
+          </li>
+          <form class="search-form">
+
+             <input type="text" placeholder="Search ">
+             <button> Search </button>
+         </form>
+       </ul>
+    </div>
+
+
+        <div class="box">
+          <h6><i class="fas fa-laptop fa-fw"></i>Laptops</h6>
+          <h6><i class="fas fa-tablet fa-fw"></i>Tablets</h6>
+          <h6><i class="fas fa-camera fa-fw"></i>Cameras</h6>
+          <h6><i class="fas fa-tv fa-fw"></i>Television</h6>
+          <h6><i class="fas fa-battery-half fa-fw"></i>Power Banks</h6>
+       </div>
+
+
+    <h1>Mobiles</h1>
+
+    <div class="boxed">
+
+    <div class="dropdown">
+      <button class="dropbtn">BY Brands</button>
+      <div class="dropdown-content">
+        <a href="#">iphone</a>
+        <a href="{% url 'samsung' %}">Samsung</a>
+        <a href="#">Oppo</a>
+        <a href="#">One plus</a>
+        <a href="#">Vivo</a>
+        <a href="#">More...</a>
+      </div>
+    </div>
+
+
+    <div class="slidecontainer">
+    <h4>By Price</h4>
+  <input type="range" min="20000" max="40000" value="25000" step="1000" onChange="sliderChange(this.value)" />
+<br /><br />
+    Range = <span id="sliderStatus">25000</span>
+</div>
+
+ <form class="submit-form">
+             <button > Submit</button>
+         </form>
+
+  <h5>Categories</h5>
+
+ <form name="myForm">
+  <input type="checkbox" id="fruit1" name="fruit-1" value="Gaming" onclick="checkOnly(this)">
+  <label for="fruit1">Gaming</label>
+  <input type="checkbox" id="fruit2" name="fruit-2" value="SNS" onclick="checkOnly(this)">
+  <label for="fruit2">SNS</label>
+  <input type="checkbox" id="fruit3" name="fruit-3" value="Photography" onclick="checkOnly(this)">
+  <label for="fruit3">Photography</label>
+  <!--<input type="checkbox" id="fruit4" name="fruit-4" value="Internet Browsing" onclick="checkOnly(this)">
+  <label for="fruit4">Internet Browsing</label>
+  <input type="checkbox" id="fruit5" name="fruit-5" value="Music" onclick="checkOnly(this)">
+  <label for="fruit5">Music</label>-->
+
+</form>
+
+<form class="submit-form">
+             <button > Search</button>
+         </form>
+  </div>
+  </body>
+</html>

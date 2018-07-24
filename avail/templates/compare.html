@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/style1.css">
+	<link rel="stylesheet" type="text/css" href="/static/slide.css">
+	<link rel="stylesheet" type="text/css" href="/static/button.css">
+
+	<link rel="stylesheet" type="text/css" href="/static/compare.css">
+
+</head>
+<body>
+	<a href="{% url 'signin' %}"></a>
+	<a href="{% url 'about' %}"></a>
+	<a href="{% url 'register' %}"></a>
+  <div class="main">
+     <ul>
+	     	<li><a href="{% url 'home' %}"><i class="fas fa-home fa-fw"></i>Home</a></li>
+	        <li><a href="{% url 'about' %}"><i class="fas fa-font fa-fw"></i> About Us</a></li>
+	        <li><a href="{% url 'compare' %}"><i class="fas fa-balance-scale fa-fw"></i> Compare</a>
+
+	        </li>
+	        <li><a href="{% url 'categories' %}"><i class="fas fa-clipboard fa-fw"></i> Categories</a>
+
+	        </li>
+	        <li><a href="{% url 'signin' %}"><i class="fas fa-user fa-fw"></i> Sign in</a>
+	        </li>
+	        <li><a href="{% url 'register' %}"><i class="fas fa-book fa-fw"></i> Register</a>
+	        </li>
+	        <form class="search-form">
+
+	           <input type="text" placeholder="Search ">
+	           <button> Search </button>
+
+	        </form>
+     	</ul>
+ 	 </div>
+ 	  <div class="hello">
+
+ 	 				<form class="clearfix" action="" method="get" _lpchecked="1">
+      				<h2>Compare</h2>
+        			<input type="hidden" name="idPhone1" value="9208">
+					<input type="hidden" name="idPhone2" value="0">
+					<input type="hidden" name="idPhone3" value="0">
+					<input type="text" id="sSearch1" class="st-input-cmp float-left" name="sSearch1" value="" autocomplete="off">
+	            	<h3>Please enter model name or part of it</h3>
+
+      </form>
+
+
+
+      <form class="clearfix " action="float-left" method="get" _lpchecked="1">
+      <h2>With</h2>
+        	<input type="hidden" name="idPhone1" value="9208">
+			<input type="hidden" name="idPhone2" value="0">
+			<input type="hidden" name="idPhone3" value="0">
+									<input type="text" id="sSearch1" class="st-input-cmp float-left" name="sSearch1" value="" autocomplete="off">
+			<h3>Please enter model name or part of it</h3>
+			<button> Search </button>
+      </form>
+	</div>
+
+	<table>
+			<tr>
+		    <th>Specification</th>
+		    <th></th>
+		    <th></th>
+		  </tr>
+		  <tr>
+		    <td>Screen Size</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>Resolution</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>OS</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>CPU</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>Storage</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>RAM</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>Front Camera</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>Rear Camera</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>Wifi</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>Battery</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+		  <tr>
+		    <td>Price</td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+
+
+	</table>
+
+</body>
+</html>
+
+
+
+
+
+
+

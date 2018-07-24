@@ -1,0 +1,29 @@
+.osh-tabs-defult{
+	float: right;
+}
+.brands {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+element.style {
+}
+
+.brands.-gallery>.brand:nth-child(5n+1) {
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+}
+.brands.-gallery>.brand {
+    width: 20%;
+    float: left;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
